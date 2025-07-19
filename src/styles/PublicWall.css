@@ -1,0 +1,8 @@
+.wall-container {
+  padding: 30px;
+}
+.capsule-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}

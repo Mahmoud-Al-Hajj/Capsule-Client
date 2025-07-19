@@ -1,0 +1,57 @@
+.capsule-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.capsule-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.capsule-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.capsule-form input,
+.capsule-form textarea,
+.capsule-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.capsule-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #1f7aec;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.capsule-form button:hover {
+  background-color: #155ec3;
+}
+
+.capsule-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+  width: 250px;
+}
+.mood {
+  font-size: 0.9em;
+  color: gray;
+}
