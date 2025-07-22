@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #5e7b95;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+.my-capsules-container {
+  margin-top: 140px;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.capsule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header button {
+  width: 150px; /* Adjust as needed */
+  padding: 8px 16px;
+  background-color: #d35400;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #e67e22;
+}
+
+.capsules-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.capsule-card {
+  padding: 1rem;
+  border-radius: 10px;
+  background: white;
+  color: #333;
+}
+
+.capsule-card:hover {
+  transform: translateY(-5px);
+}
+
+.capsule-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.capsule-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+.loading {
+  margin: 40px auto;
+  border: 8px solid #eee;
+  border-top: 8px solid #d35400;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

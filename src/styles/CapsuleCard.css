@@ -1,57 +1,55 @@
-.capsule-form {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #f8f9fa;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  font-family: sans-serif;
-}
-
-.capsule-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.capsule-form label {
-  display: block;
-  margin-top: 12px;
-  font-weight: bold;
-}
-
-.capsule-form input,
-.capsule-form textarea,
-.capsule-form select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 4px;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-}
-
-.capsule-form button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-  background-color: #1f7aec;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  /* background: linear-gradient(to left, #6146eaf3, #5a55ae); */
+  background: linear-gradient(to right, #5d7b93, #6d8ba3);
   color: white;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.capsule-form button:hover {
-  background-color: #155ec3;
+.public-wall-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.capsules-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1520px;
 }
 
 .capsule-card {
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 6px;
-  width: 250px;
+  flex: 0 0 300px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-align: left;
 }
-.mood {
-  font-size: 0.9em;
-  color: gray;
+
+.capsule-card:hover {
+  transform: translateY(-3px);
+}
+
+.capsule-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.capsule-card p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 0.95rem;
 }
