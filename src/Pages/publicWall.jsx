@@ -108,6 +108,7 @@ function PublicWall() {
                 mood={capsule.mood}
                 country={capsule.country}
                 reveal_at={capsule.reveal_at}
+                photo={capsule.photo}
               />
             ))}
           </div>

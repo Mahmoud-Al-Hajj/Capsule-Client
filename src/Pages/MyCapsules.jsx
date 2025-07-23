@@ -11,6 +11,8 @@ export default function MyCapsules() {
   const storedName = localStorage.getItem("name");
   const storedEmail = localStorage.getItem("email");
   const RevealAt = localStorage.getItem("reveal_at");
+  const is_public = localStorage.getItem("is_public");
+  const [photo, setPhoto] = useState(null);
 
   useEffect(() => {
     if (!storedUserId) return;
@@ -24,6 +26,7 @@ export default function MyCapsules() {
       .then((response) => {
         setCapsules(response.data.payload);
         setLoading(false);
+        setPhoto(response.data.payload.photo);
       })
 
       .catch(console.error);
@@ -68,6 +71,13 @@ export default function MyCapsules() {
           <div className="capsules-grid">
             {capsules.map((capsule) => (
               <div key={capsule.id} className="capsule-card">
+                {capsule.photo && (
+                  <img
+                    src={`http://127.0.0.1:8000${capsule.photo}`}
+                    alt="Capsule"
+                    className="capsule-photo"
+                  />
+                )}
                 <h3>{capsule.title}</h3>
                 <p>{capsule.message}</p>
                 <p>
@@ -78,6 +88,10 @@ export default function MyCapsules() {
                 </p>
                 <p>
                   <strong>Status:</strong> {getTimeStatus(capsule.reveal_at)}
+                </p>
+                <p>
+                  <strong>Visibility:</strong>
+                  {capsule.is_public ? "Public" : "Private"}
                 </p>
               </div>
             ))}

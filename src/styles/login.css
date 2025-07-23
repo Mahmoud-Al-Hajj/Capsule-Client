@@ -59,3 +59,8 @@ p {
   font-size: 1;
   color: black;
 }
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+  margin: 5px;
+}

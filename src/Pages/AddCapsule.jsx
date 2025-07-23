@@ -52,13 +52,8 @@ function AddCapsule() {
         }
       );
       console.log("Success:", response.data);
-    } catch (error) {
-      console.error("Error details:", {
-        status: error.response?.status,
-        data: error.response?.data,
-        message: error.message,
-      });
-    }
+      window.location.href = "/profile";
+    } catch (error) {}
   };
 
   return (
@@ -127,7 +122,6 @@ function AddCapsule() {
             className="custom-checkbox"
             onChange={(e) => setIsPublic(e.target.checked)}
             checked={isPublic}
-            required
           />
         </label>
 
