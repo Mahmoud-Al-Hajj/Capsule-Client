@@ -28,7 +28,11 @@ function Login() {
         window.location.href = "/";
       }, 100);
     } catch (error) {
-      setErrors(error.response.data.errors);
+      setErrors(
+        error.response.data.errors || {
+          login: ["Invalid credentials check your email and password."],
+        }
+      );
     }
   };
 
